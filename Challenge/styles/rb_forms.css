@@ -1,0 +1,113 @@
+/*
+
+   Survey Forms Style Sheet
+   Author: 
+   Date:   
+
+   Filename:         rb_forms.css
+
+*/
+table {
+  width: 50%;
+  border-collapse: separate;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+th {
+  background-color: #4CAF50; /* New color */
+  color: white; /* Optional: change text color for contrast */
+}
+th, td {
+  border: 1px solid blue; /* Example border color */
+}
+
+/* Form Layout Styles */
+table {
+  width: 80%;
+  border-collapse: separate;
+}
+
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #0d8af0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #1c5ed7;
+}
+
+tfoot {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.time-col {
+  width: 15%;
+}
+
+.class-col {
+  width: 25%;
+}
+
+.instructor-col {
+  width: 20%;
+}
+
+/* See Tutorial 5 for details on using a flexible layout */
+
+form#survey {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+form#survey > fieldset {
+  -webkit-flex: 1 1 300px;
+  flex: 1 1 300px;
+}
+
+div.formRow {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+div.formRow > * {
+  -webkit-flex: 1 1 150px;
+  flex: 1 1 150px;
+}
+
+/* Legend Styles */
+
+/* Text Area Styles */
+
+/* Spinner Styles */
+/* See Tutorial 5 for details on using a flexible layout */
+
+div.formRow > input#dineSpin {
+  -webkit-flex: 0 0 50px;
+  flex: 0 0 50px;
+}
+
+/* Form Button Styles */
+
+/* Validation Styles */

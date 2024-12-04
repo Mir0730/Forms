@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+
+      Filename:   rb_survey.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Big 5 sports Admissions</title>
+    <link href="styles/rb_reset.css" rel="stylesheet" />
+    <link href="styles/rb_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/rb_forms.css">
+  </head>
+
+  <body>
+
+
+    <header>
+      <img src="images/0.1.jpg" alt="Sports" id="Simg" />
+      <nav>
+        <a id="navicon" href="#"><img src="images/rb_navicon.png" alt=""/></a>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">coupons</a></li>
+          <li><a href="#">Rentals</a></li>
+          <li><a href="#">Instructors</a></li>
+          <li><a href="#">reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Admissions</h2>
+      <p>
+        At Big 5 Sports, we are committed to helping you achieve your fitness 
+        and sports goals. Whether you're looking to lose weight, build strength, 
+        or improve your performance in a specific sport, our expert team and <em>wide 
+        range of equipment</em> are here to support you every step of the way. Our customers <br>
+        have successfully transformed their fitness journeys, with many reaching their weight 
+        loss goals and discovering newfound <em>strength and endurance.</em> With <em>personalized advice,</em> 
+        top-notch gear, and a motivating community, Big 5 Sports is more than just a sports 
+        club, it is a partner in your journey to better health and wellness.
+        
+      </p>
+      <p>
+        Achieve your goals with Big 5 Sports—
+        where determination meets <em>success!</em>
+      </p>
+      <p>Required values are marked by an asterisk (*)</p>
+    
+    </section>
+
+    <table>
+      <caption>Big 5 Sports Classes Schedule</caption>
+      <thead>
+          <tr>
+              <th>Time</th>
+              <th>Class</th>
+              <th>Instructor</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>8:00 AM - 9:00 AM</td>
+              <td rowspan="2">Yoga</td>
+              <td >John Doe</td>
+          </tr>
+          <tr>
+              <td>9:00 AM - 10:00 AM</td>
+              <td>Jane Smith</td>
+          </tr>
+          <tr>
+              <td>10:00 AM - 11:00 AM</td>
+              <td>Futsal</td>
+              <td>Michael Johnson</td>
+          </tr>
+          <tr>
+              <td>11:00 AM - 12:00 PM</td>
+              <td>Strength Training</td>
+              <td>Emily Davis</td>
+          </tr>
+          <tr>
+              <td>12:00 PM - 1:00 PM</td>
+              <td>Self Defense</td>
+              <td>James Williams</td>
+          </tr>
+          <tr>
+              <td>1:00 PM - 2:00 PM</td>
+              <td rowspan="2">Aerobics</td>
+              <td>Linda Brown</td>
+          </tr>
+          <tr>
+              <td>2:00 PM - 3:00 PM</td>
+              <td>David White</td>
+          </tr>
+          <tr>
+              <td>3:00 PM - 4:00 PM</td>
+              <td>Boxing</td>
+              <td>Sarah Green</td>
+          </tr>
+          <tr>
+              <td>4:00 PM - 5:00 PM</td>
+              <td>Mountain Biking</td>
+              <td>Daniel King</td>
+          </tr>
+          <tr>
+              <td>5:00 PM - 6:00 PM</td>
+              <td>Swimming</td>
+              <td>Olivia Scott</td>
+          </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+              <td colspan="3">Schedule Subject to Change</td>
+          </tr>
+      </tfoot>
+  </table>
+
+    <main>
+      <form method = "GET">
+        <div>
+        <label for="fullName">Full Name</label><br>
+        <input type="text" id = "fullName" name = "fullName">
+      </div>
+      <div>
+        <label for="satisfied">satisfied: </label><br>
+        <input type="range" min="1" max="10" value="10" name="satisfied">
+      </div>
+      <div>
+        <label for="price">HOw many courses You want to take </label>
+        <select name="price">
+          <option value="1" default>1</option>
+          <option value="2" default>2</option>
+          <option value="3" default>3</option>
+          <option value="4" default>4</option>
+          <option value="5" default>5[MAX]</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="useremail">*Email</label>
+        <input type="email" name = "useremail" required>
+      </div>
+
+
+
+<!-- More stufff here-->
+        
+    
+
+        <div>
+          <label for="phonenumber">*Phone</label>
+          <input type="tel" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" name = "phonenumber" placeholder="+### ###-###-####" required><br>
+        </div>
+
+        <div><label for="cname">Name on Card</label><br>
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe"><br>
+          <label for="ccnum">Credit card Number</label><br>
+          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" pattern= "[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required> <br>
+
+          <label for="expDate">Expiration Date</label>
+          <input type="month" id="expDate" value="2024-07-22" min="2018-01-01" max="2029-12-31" name = "expDate">
+        </div>
+
+        <label for="option1">
+          <input type="radio" id="option1" name="choice" value="option1">
+          I have Dissability
+        </label><br>
+      
+        <label for="option2">
+          <input type="radio" id="option2" name="choice" value="option2">
+          I don't have any Dissability
+        </label><br>
+      
+        <label for="comments">Any Sugggestions:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50">
+        </textarea><br>
+      
+        <!-- Reset button -->
+        <input type="reset" value="Reset">
+
+        <input type="submit" value = "Stealling your Identity">
+
+
+      </form>
+    </main>
+
+    <footer>
+      <h2>Courses</h2>
+      <a href="#">Yoga</a> <a href="#">Stregnth Training</a> <a href="#">Wrestling</a>
+      <a href="#">Self Defence</a> <a href="#">Boxing</a> <a href="#">Arobics</a>
+      <a href="#">Mountain Biking</a> <a href="#">Swimming and ...</a>
+      <h2>ABOUT US</h2>
+      <a href="#">Our Story</a> <a href="#">Blog</a> <a href="#">Outdoors</a>
+      <a href="#">Rentals</a>
+      <h2>CUSTOMER SERVICE</h2>
+      <a href="#">Disability Service</a> <a href="#">Message Center</a>
+      <a href="#">Sona</a>
+      <h2>MY ACCOUNT</h2>
+      <a href="#">Create an Account</a> <a href="#">Sign In</a>
+      <a href="#">Enrollment Status</a>
+      <h2>NUTRITION</h2>
+      <a href="#">Nutrition Information</a> <a href="#">Dietary Advices</a>
+      <a href="#">Proteins</a>
+      <h2>POLICIES</h2>
+      <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
+      <address>
+        Big 5 Sports <br />
+        911 Gold Sank <br />
+        Olive Garden, MI 65701 <br />
+        (299) 666 - 6584
+      </address>
+    </footer>
+  </body>
+</html>
